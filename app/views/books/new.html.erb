@@ -1,0 +1,13 @@
+<div class="max-w-md mx-auto mt-8">
+  <h1 class="text-3xl font-bold mb-6 text-center">Insert New Book</h1>
+
+  <%= form_with(model: @book, url: books_path, method: :post, class: "bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4") do |form| %>
+    <%= render 'form', form: form %>
+
+    <div class="flex items-center justify-between">
+      <%= form.submit 'Add Book', class: "bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded" %>
+    </div>
+  <% end %>
+
+  <%= link_to 'Back to Books', root_path, class: "text-blue-500 hover:text-blue-700" %>
+</div>

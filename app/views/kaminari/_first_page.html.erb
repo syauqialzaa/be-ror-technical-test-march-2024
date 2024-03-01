@@ -1,0 +1,3 @@
+<span class="inline-block bg-gray-200 rounded-md px-2 py-1">
+  <%= link_to_unless current_page.first?, t('views.pagination.first').html_safe, url, remote: remote, class: "text-blue-500 hover:text-blue-700" %>
+</span>

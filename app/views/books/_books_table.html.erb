@@ -1,0 +1,24 @@
+<div class="overflow-x-auto">
+  <table class="min-w-full border border-collapse">
+    <thead>
+      <tr class="bg-gray-200">
+        <th class="border p-2">No.</th>
+        <th class="border p-2">Title</th>
+        <th class="border p-2">Genre</th>
+        <th class="border p-2">Year</th>
+        <th class="border p-2">Author</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @books.each_with_index do |book, index| %>
+        <tr class="<%= index.odd? ? 'bg-gray-100' : 'bg-white' %>">
+          <td class="border p-2 text-center"><%= index + 1 %></td>
+          <td class="border p-2"><%= book.title %></td>
+          <td class="border p-2"><%= book.genre %></td>
+          <td class="border p-2 text-center"><%= book.year %></td>
+          <td class="border p-2"><%= book.author.name %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,10 @@
+<h1 class="text-2xl font-bold mb-4">Book data has been created by <%= @user.username %></h1>
+
+<p class="mb-2">You have just successfully inserted a book.</p>
+
+<ul class="list-disc ml-6">
+  <li><span class="font-bold">Title:</span> <%= @book.title %></li>
+  <li><span class="font-bold">Genre:</span> <%= @book.genre %></li>
+  <li><span class="font-bold">Year:</span> <%= @book.year %></li>
+  <li><span class="font-bold">Author:</span> <%= @book.author.name %></li>
+</ul>

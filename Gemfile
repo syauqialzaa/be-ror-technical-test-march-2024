@@ -5,13 +5,13 @@ ruby "3.1.2"
 gem "rails", "~> 7.0.4"
 
 gem "sprockets-rails"
-
-gem "sqlite3", "~> 1.4"
+gem 'pg', '~> 1.5', '>= 1.5.5'
 gem "puma", "~> 5.0"
 gem "importmap-rails"
 gem "turbo-rails"
 gem "stimulus-rails"
 gem "jbuilder"
+gem 'redis', '~> 5.1'
 
 gem "tailwindcss-rails", "~> 2.3"
 gem "rack-cors"
